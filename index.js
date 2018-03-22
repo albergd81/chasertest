@@ -1,6 +1,6 @@
 'use strict';
-var arr = null;
-var arre = [
+// Array of objects
+var arr = [
   {
     name: 'Three',
     ranking: 3
@@ -72,3 +72,8 @@ function averageRankingES6 () {
   arr.forEach(item => avgRanking += item.ranking);
   return avgRanking / arr.length;
 }
+
+module.exports.orderByRanking = orderByRanking;
+module.exports.orderByRankingES6 = orderByRankingES6;
+module.exports.averageRanking = averageRanking;
+module.exports.averageRankingES6 = averageRankingES6;
